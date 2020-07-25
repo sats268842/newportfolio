@@ -1,7 +1,8 @@
 @import '../../main-style.scss';
 
-
 .landing{
+
+
   position: relative;
 .home-image{
   bottom: 50px !important;
@@ -9,7 +10,6 @@
   padding-right: 0 !important;
   padding-left: 0 !important;
   position: absolute;
-
 }
 .landing-image{
   width: 0;
@@ -41,16 +41,11 @@ h4{
 }
 
 .about-section {
-  padding-top: 150px !important;
-  padding-left: 100px !important;
-  padding-right: 100px !important;
+
 }
 
 
 .skill-section{
-  padding-top: 150px !important;
-  padding-left: 100px !important;
-  padding-right: 100px !important;
 
 
   img{
@@ -63,26 +58,17 @@ h4{
 
 .service-section{
 
-  padding-top: 150px !important;
-  padding-left: 100px !important;
-  padding-right: 100px !important;
+
 
   .column{
     margin-bottom: 50px;
   }
-  .columns{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+
 }
 
 
 
 .works-section{
-
-  padding-top: 150px !important;
-  padding-left: 100px !important;
-  padding-right: 100px !important;
 
   .column{
     margin-bottom: 50px;
@@ -102,18 +88,6 @@ h4{
 
 .contact-section{
 
-  padding-top: 150px !important;
-  padding-left: 100px !important;
-  padding-right: 100px !important;
-
-  // .column{
-  //   margin-bottom: 50px;
-  //   display: flex;
-  // }
-  // .columns{
-  //   display: grid;
-  //   grid-template-columns: 1fr 1fr;
-  // }
 .input, textarea{
   border: none;
   background: none;
@@ -124,24 +98,6 @@ h4{
 }
 }
 
-
-.footer{
-  position: relative;
-
-  z-index: 500;
-  bottom: 0 !important;
-  margin-bottom: 0;
-  padding: 1rem 1.5rem 1rem	!important;
-  background-color: $primary;
-  color: white;
-  p{
-    opacity: 0.8;
-  }
-  i{
-    color: white;
-    opacity: 0.8;
-  }
-}
 
 // .landing-image{
 //   position:absolute;
@@ -157,3 +113,51 @@ h4{
 //   // opacity: 0.1;
 //   // z-index: 1;
 // }
+@media screen and (max-width: 1020px) {
+  .container {
+
+    padding-top: 30px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    }
+
+.landing{
+  .columns{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+  }
+
+  .home-text{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 85px !important;
+    h4{
+      font-size: 16px;
+    }
+
+  }
+}
+}
+
+@media only screen  and (min-width : 1224px) {
+  /* Styles */
+  // .container {
+
+  //   padding-top: 150px !important;
+  //   // padding-left: 100px !important;
+  //   // padding-right: 100px !important;
+  //   }
+  .landing{
+
+  }
+  .service-section{
+
+    .columns{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+     }
+  }
+
+
+}

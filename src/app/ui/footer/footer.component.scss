@@ -1,0 +1,22 @@
+@import '../../../main-style.scss';
+
+
+
+.footer{
+  // position: relative;
+
+  z-index: 500;
+  bottom: 0 !important;
+  right: 0;
+  margin-bottom: 0;
+  padding: 1rem 1.5rem 1rem	!important;
+  background-color: $primary;
+  color: white;
+  p{
+    opacity: 0.8;
+  }
+  i{
+    color: white;
+    opacity: 0.8;
+  }
+}

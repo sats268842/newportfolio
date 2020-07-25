@@ -1,16 +1,17 @@
-<section class="landing">
+<section class="landing ">
+  <div class="landing-image is-hidden-touch"></div>
 <div class="columns">
 
-  <div class="column">
-    <div class="landing-image"></div>
+  <div class="column ">
 
-    <div class="home-text">
+
+    <div class="home-text ">
 
     <h5>Hi, there!</h5>
-    <h1 class="has-text-weight-bold">I'm Santhosh Thomas</h1>
+    <h1 class="has-text-weight-bold is-size-3-touch">I'm Santhosh Thomas</h1>
     <h4>Web Developer</h4>
     <div class="buttons pt-5">
-    <button class="button is-primary button is-medium has-text-weight-semibold pl-5 pr-5">Hire Me</button>
+    <button class="button is-primary button is-normal has-text-weight-semibold pl-5 pr-5">Hire Me</button>
     </div>
 
     <div class="columns pt-3">
@@ -33,23 +34,23 @@
 
 
   <div class="column">
-    <img class="home-image image " src="../../assets/section1.png">
+    <img class="home-image image is-hidden-touch" src="../../assets/section1.png">
   </div>
 
 </div>
 </section>
 
 
-<section class="pt-6 about-section">
+<section class="pt-6 about-section container">
   <br>
-<h1 class="is-size-1 has-text-weight-bold has-text-primary">About <span class="has-text-link">Me</span></h1>
+<h1 class="is-size-1 has-text-weight-bold has-text-primary has-text-centered-touch">About <span class="has-text-link">Me</span></h1>
 
 <div class="columns pt-6 mt-6">
   <div class="column">
     <img class="image" src="../../assets/about.svg">
   </div>
     <div class="column">
-      <h1 class="is-size-2 pt-6 has-text-weight-semibold has-text-primary">Santhosh Thomas</h1>
+      <h1 class="is-size-2 pt-6 has-text-weight-semibold has-text-primary is-size-3-touch">Santhosh Thomas</h1>
 
       <p class="is-size-5 has-text-weight-medium has-text-link pt-6">I am a Website designer, developer & graphic designer. A design minded front-end software engineer focused on building beautiful interfaces & experience.  My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.</p>
       <div class="buttons pt-6">
@@ -60,7 +61,7 @@
 </section>
 
 
-<section class="pt-6 skill-section">
+<section class="pt-6 skill-section container">
   <br>
 <h1 class="is-size-1 has-text-weight-bold has-text-primary">My <span class="has-text-link">Skills</span></h1>
 
@@ -74,15 +75,12 @@
 </div>
 
 </section>
-
-
-
-
-<section class="pt-6 about-section">
+s
+<section class="pt-6 education-section container">
   <br>
-<h1 class="is-size-1 has-text-weight-bold has-text-primary">My <span class="has-text-link">Education</span></h1>
+<h1 class="is-size-1 has-text-weight-bold has-text-primary has-text-centered-touch">My <span class="has-text-link">Education</span></h1>
 <div class="hero">
-<div class="columns pt-6 mt-6">
+<div class="columns pt-6 pb-6 mt-6">
 
     <img class="image" src="../../assets/education.png">
 </div>
@@ -91,11 +89,11 @@
 
 
 
-<section class="pt-6 service-section">
+<section class="pt-6 service-section container">
   <br>
-<h1 class="is-size-1 has-text-weight-bold has-text-primary">My <span class="has-text-link">Services</span></h1>
+<h1 class="is-size-1 has-text-weight-bold has-text-primary has-text-centered-touch">My <span class="has-text-link">Services</span></h1>
 <div class="container">
-<div class="columns pt-6 mt-6 " >
+<div class="columns pt-6 " >
 
   <div class="column" *ngFor="let service of services">
 
@@ -107,7 +105,7 @@
         </figure>
         <div class="media-content">
           <div class="contendt">
-            <p class="is-size-4 pt-1 has-text-weight-bold has-text-primary"> {{ service.name }}</p>
+            <p class="is-size-4 pt-1 has-text-weight-bold has-text-primary is-size-5-touch"> {{ service.name }}</p>
             <p class="is-size-6 pt-2 has-text-weight-medium has-text-link">
               {{ service.description }}
             </p>
@@ -126,11 +124,11 @@
 
 
 
-<section class="pt-6 works-section">
+<section class="pt-6 works-section container">
   <br>
-<h1 class="is-size-1 has-text-weight-bold has-text-primary">My <span class="has-text-link">Works</span></h1>
+<h1 class="is-size-1 has-text-weight-bold has-text-primary has-text-centered-touch">My <span class="has-text-link">Works</span></h1>
 <div class="container">
-<div class="columns pt-6 mt-6 " >
+<div class="columns pt-6" >
 
   <div class="column" *ngFor="let work of works">
     <div class="card">
@@ -160,21 +158,20 @@
 
 
 
-
-
-
-<section class="pt-6 contact-section">
+<!--
+<section class="pt-6 contact-section container">
   <br>
-<h1 class="is-size-1 has-text-weight-bold has-text-primary">Contact <span class="has-text-link">Me</span></h1>
+<h1 class="is-size-1 has-text-weight-bold has-text-primary has-text-centered-touch">Contact <span class="has-text-link">Me</span></h1>
 
 
 <div class="columns pt-6 mt-6 ">
   <div class="column">
     <img class="image" src="../../assets/contactus.png">
   </div>
+
     <div class="column">
 
-      <div class="container">
+      <div class="containers">
       <div class="field">
         <div class="control">
           <input class="input is-primary" type="text" placeholder="Name">
@@ -196,23 +193,8 @@
 
 
 </section>
+ -->
 
 
-<footer class="footer mt-6">
-
-
-
-    <div class="content has-text-centered">
-      <p>
-
-© santhoshthomas 2020 | <span class="pr-2 pl-2"><a target="_unblank" href="https://www.behance.net/santhoshthomas"><i class="fab fa-behance"></i></a></span>
-<span class="pr-2 pl-2"><a target="_unblank" href="https://www.behance.net/santhoshthomas"><i class="fab fa-linkedin-in"></i> </a></span>
-<span class="pr-2 pl-2"><a target="_unblank" href="https://github.com/sats268842"><i class="fab fa-github-alt"></i></a></span>
-<span class="pr-2 pl-2"><a target="_unblank" href="https://www.instagram.com/san_thos_h/"><i class="fab fa-instagram"></i></a></span>
-      </p>
-    </div>
-
-
-</footer>
 
 <!-- <div class="landing-image"></div> -->

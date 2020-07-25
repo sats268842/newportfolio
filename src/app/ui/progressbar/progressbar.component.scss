@@ -2,6 +2,8 @@
   transition: stroke-dashoffset 0.3s;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
+
+  // animation: spin 2s linear ;
 }
 
 .text {
@@ -14,4 +16,9 @@ p{
 
 .text1{
   text-align: center;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  75% { transform: rotate(360deg); }
 }
