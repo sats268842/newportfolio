@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     { name: 'creator', content: this.author },
     { name: 'Copyright', content: this.author },
     { name: 'title', content: this.author },
-    {name: 'robots', content: 'index, follow'},
+    // {name: 'robots', content: 'index, follow'},
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { charset: 'UTF-8' },
 
