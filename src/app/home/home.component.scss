@@ -1,0 +1,60 @@
+@import '../../main-style.scss';
+
+
+.landing{
+  position: relative;
+.home-image{
+  bottom: 50px !important;
+  // margin-bottom: 0;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  position: absolute;
+
+}
+.landing-image{
+  width: 0;
+  height: 0;
+  top:0 !important;
+  border-top: 350px solid $primary;
+  border-right: 350px solid transparent;
+}
+
+.home-text{
+  bottom: 0 !important;
+  padding-left: 100px !important;
+h5{
+  color: $primary;
+  font-size: 22px;
+}
+h1{
+  color: $primary;
+  font-size: 64px;
+}
+h4{
+  color: $lightblack;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+// position: absolute;
+}
+}
+
+.about-section {
+  padding-top: 150px !important;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+}
+
+
+.skill-section{
+  padding-top: 150px !important;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+
+
+  img{
+    text-align: center;
+    margin: auto;
+  }
+}
