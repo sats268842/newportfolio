@@ -1,0 +1,20 @@
+<svg viewBox="0, 0, 100, 100">
+  <circle
+    class="progress-circle"
+    stroke-width="3"
+    [style.strokeDasharray]="circumference"
+    [style.strokeDashoffset]="strokeDashoffset"
+    fill="transparent"
+    stroke="red"
+    r="25"
+    cx="50"
+    cy="50"
+  />
+  <text x="51" y="55" class="text" text-anchor="middle">{{(value) + '%'}}</text>
+</svg>
+<div class="text1">
+<p [innerHTML]=icon  class="pr-3">
+
+</p>
+<p class="pt-4 has-text-centered has-text-weight-semibold has-text-link is-size-4">{{ skill }}</p>
+</div>

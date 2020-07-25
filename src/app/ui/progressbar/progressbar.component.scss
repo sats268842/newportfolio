@@ -1,0 +1,17 @@
+.progress-circle {
+  transition: stroke-dashoffset 0.3s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.text {
+  font-family: 'poppins';
+  font-size: 12px;
+}
+p{
+  display: inline;
+}
+
+.text1{
+  text-align: center;
+}

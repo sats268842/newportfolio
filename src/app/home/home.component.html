@@ -65,44 +65,14 @@
 <h1 class="is-size-1 has-text-weight-bold has-text-primary">My <span class="has-text-link">Skills</span></h1>
 
 <div class="columns pt-6 mt-6 is-centered">
-  <div class="column ">
-    <img class="image  is-128x128" src="../../assets/flask.png">
-    <h5 class="pt-4 has-text-centered has-text-weight-semibold has-text-link is-size-4">Angular</h5>
-  </div>
-  <div class="column">
-    <img class="image  is-128x128" src="../../assets/flask.png">
-    <h5 class="pt-4 has-text-centered has-text-weight-semibold has-text-link is-size-4">Angular</h5>
-  </div>
-  <div class="column">
-    <img class="image  is-128x128" src="../../assets/flask.png">
-    <h5 class="pt-4 has-text-centered has-text-weight-semibold has-text-link is-size-4">Angular</h5>
-  </div>
-  <div class="column">
-    <img class="image  is-128x128" src="../../assets/flask.png">
-    <h5 class="pt-4 has-text-centered has-text-weight-semibold has-text-link is-size-4">Angular</h5>
-  </div>
+
+  <div class="column" *ngFor="let skill of skills">
+    <app-progressbar [value]=skill.per [skill]=skill.name [icon]=skill.icon></app-progressbar>
+
 
     </div>
+</div>
 
-    <div class="columns pt-6 is-centered">
-      <div class="column ">
-        <img class="image  is-128x128" src="../../assets/flask.png">
-        <h5 class="pt-4 has-text-centered has-text-weight-semibold has-text-link is-size-4">Angular</h5>
-      </div>
-      <div class="column">
-        <img class="image  is-128x128" src="../../assets/flask.png">
-        <h5 class="pt-4 has-text-centered has-text-weight-semibold has-text-link is-size-4">Angular</h5>
-      </div>
-      <div class="column">
-        <img class="image  is-128x128" src="../../assets/flask.png">
-        <h5 class="pt-4 has-text-centered has-text-weight-semibold has-text-link is-size-4">Angular</h5>
-      </div>
-      <div class="column">
-        <img class="image  is-128x128" src="../../assets/flask.png">
-        <h5 class="pt-4 has-text-centered has-text-weight-semibold has-text-link is-size-4">Angular</h5>
-      </div>
-
-        </div>
 </section>
 
 
@@ -118,17 +88,131 @@
 </div>
 </div>
 </section>
-dd
 
 
-<section class="pt-6 about-section">
+
+<section class="pt-6 service-section">
   <br>
 <h1 class="is-size-1 has-text-weight-bold has-text-primary">My <span class="has-text-link">Services</span></h1>
+<div class="container">
+<div class="columns pt-6 mt-6 " >
 
-<div class="columns pt-6 mt-6">
+  <div class="column" *ngFor="let service of services">
+
+      <article class="media">
+        <figure class="media-left">
+          <p class="image is-96x96">
+            <img [src]=service.imageUrl>
+          </p>
+        </figure>
+        <div class="media-content">
+          <div class="contendt">
+            <p class="is-size-4 pt-1 has-text-weight-bold has-text-primary"> {{ service.name }}</p>
+            <p class="is-size-6 pt-2 has-text-weight-medium has-text-link">
+              {{ service.description }}
+            </p>
+          </div>
+
+        </div>
+
+      </article>
+      </div>
+  </div>
 
   </div>
-   <div class="column">
 
-    </div>
+
 </section>
+
+
+
+<section class="pt-6 works-section">
+  <br>
+<h1 class="is-size-1 has-text-weight-bold has-text-primary">My <span class="has-text-link">Works</span></h1>
+<div class="container">
+<div class="columns pt-6 mt-6 " >
+
+  <div class="column" *ngFor="let work of works">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image  ">
+          <img [src]=work.imageurl alt="Placeholder">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+
+          <div class="media-content">
+         <a target="_unblank" href={{work.url}}> <h1 class="has-text-centered has-text-white is-size-4 has-text-weight-medium">{{ work.name }}</h1></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+      </div>
+  </div>
+
+  </div>
+
+
+</section>
+
+
+
+
+
+
+<section class="pt-6 contact-section">
+  <br>
+<h1 class="is-size-1 has-text-weight-bold has-text-primary">Contact <span class="has-text-link">Me</span></h1>
+
+
+<div class="columns pt-6 mt-6 ">
+  <div class="column">
+    <img class="image" src="../../assets/contactus.png">
+  </div>
+    <div class="column">
+
+      <div class="container">
+      <div class="field">
+        <div class="control">
+          <input class="input is-primary" type="text" placeholder="Name">
+        </div>
+      </div>
+      <div class="field pt-4">
+        <div class="control">
+          <input class="input is-primary" type="text" placeholder="Email">
+        </div>
+      </div>
+      <textarea class="textarea pt-4 is-primary" placeholder="10 lines of textarea" rows="10"></textarea>
+
+      <div class="buttons pt-4">
+        <button class="button is-primary button is-medium has-text-weight-semibold"><i class="far fa-paper-plane pr-4"></i>Submit</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+</section>
+
+
+<footer class="footer mt-6">
+
+
+
+    <div class="content has-text-centered">
+      <p>
+
+© santhoshthomas 2020 | <span class="pr-2 pl-2"><a target="_unblank" href="https://www.behance.net/santhoshthomas"><i class="fab fa-behance"></i></a></span>
+<span class="pr-2 pl-2"><a target="_unblank" href="https://www.behance.net/santhoshthomas"><i class="fab fa-linkedin-in"></i> </a></span>
+<span class="pr-2 pl-2"><a target="_unblank" href="https://github.com/sats268842"><i class="fab fa-github-alt"></i></a></span>
+<span class="pr-2 pl-2"><a target="_unblank" href="https://www.instagram.com/san_thos_h/"><i class="fab fa-instagram"></i></a></span>
+      </p>
+    </div>
+
+
+</footer>
+
+<!-- <div class="landing-image"></div> -->
