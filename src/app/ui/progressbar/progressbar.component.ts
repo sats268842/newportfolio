@@ -13,12 +13,14 @@ export class ProgressbarComponent {
   public circumference: number = 2 * Math.PI * 47;
   public strokeDashoffset: number = 0;
 
+
   ngOnChanges(changes: SimpleChanges) {
     if (changes['value']) {
       this.onPercentageChanged(changes['value'].currentValue);
     }
   }
 
+  // tslint:disable-next-line: typedef
   onPercentageChanged(val: number) {
     const offset = this.circumference - (val / 189) * this.circumference;
     this.strokeDashoffset = offset;
