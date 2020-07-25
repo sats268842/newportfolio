@@ -6,7 +6,7 @@ import { Meta, Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'Santhosh Thomas | Front End Web Developer';
+  title = "Santhosh Thomas | Front End Web Developer";
 
 
   imageUrl = "http://santhoshthomas.xyz/assets/images/profilepic.jpg";
@@ -32,10 +32,10 @@ export class AppComponent implements OnInit {
     { name: 'title', content: this.author },
     {name: 'robots', content: 'index, follow'},
     { name: 'viewport', content: "width=device-width, initial-scale=1" },
-    { charset: 'UTF-8' },
+    { charset: "UTF-8"},
 
     // <!-- Twitter -->
-    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:card', content: "summary_large_image" },
     { name: 'twitter:site', content: this.site },
     { name: 'twitter:title', content: this.author },
     { name: 'twitter:description', content: this.description },
@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
     { name: ' twitter:description', content: this.description },
 
      //  <!-- Open Graph / Facebook -->
-    { name: 'og:type', content: 'website' },
+    // { name: 'og:type', content: 'website' },
     { name: 'og:url', content: this.site },
     { property: 'og:type', content: 'website'},
     { name: 'og:title', content: this.author },
