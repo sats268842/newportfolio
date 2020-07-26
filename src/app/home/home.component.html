@@ -49,13 +49,16 @@
   <div class="column">
     <img class="image" alt="About Me Image"  src="../../assets/about.svg">
   </div>
-    <div class="column">
+    <div class="column" [@flyFromRight]>
       <h1 class="is-size-2 pt-6 has-text-weight-semibold has-text-primary is-size-3-touch">Santhosh Thomas</h1>
 
-      <p class="is-size-5 has-text-weight-medium has-text-link pt-6">I am a Website designer, developer & graphic designer. A design minded front-end software engineer focused on building beautiful interfaces & experience.  My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.</p>
+      <p class="is-size-5 has-text-weight-medium has-text-link pt-6" >I am a Website designer, developer & graphic designer. A design minded front-end software engineer focused on building beautiful interfaces & experience.  My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.</p>
       <div class="buttons pt-6">
-        <button class="button is-primary button is-medium has-text-weight-semibold"><i class="far fa-paper-plane pr-4"></i>Download CV</button>
-        </div>
+        <a href="https://public.bl.files.1drv.com/y4mRycv746dzMWuZK2ssmcAp5Q8daJmF4BXJyXZ2TsMnHOwdTdO9twOfn16dM_Kn3GSyebl3NNje8WtOf5X2ultXZtIzMgJx--3p9OSEKRAnO8mkNNwDa0eQS8z2t2R2cqMiV2dO7Dp6YzCDJBbMhC2iU3GXBEV3EbZtD8o9qILTXPSUGBgCNA1UytSc2u9JfFgePvaAIwBNJ00x0s7bV8lFJnHR7gD5thlYou4uJb3hjU?access_token=EwAoA61DBAAUzl/nWKUlBg14ZGcybuC4/OHFdfEAAQiZmKsC4yT8hb6c89edg5RbgEqecnZ9qjkYmxwtcM1oNzZMoaBBq0Uzpy43jK707JCwAJfa7JhxWgRNK4XRiDn4rSGvB2KEO2pCXxOQgqlRbLg1RIXwsnpuO56swx7/90GJuyxQUWCRbAWJyfmnDLKGI6llaBfCIPoROT7%2bx7I%2bWawbnW4Eb8UCVl4d5067ryj683PShT8n8NHjFIgAvdeQAMeYVFUwzlhu34OQnQaQJ3%2bDmLtLF7HkpaGellPf6YeZmvNtMHWcRSTwscO74HVISjaPkd5JodoEXX1wvLiqdYdQvpIyRepOgFOo3V7bBUjLBTkA6caQSvbLQ3vFMaIDZgAACOoo7CjESyhj%2bAHWuJ1hztal2SiZaku%2bJA78r66/XBQKzzVYC0PqLpkLTkSKJJFhFzXn8RqOk7/gSAur25uPnSuRwg%2b04oZ5h3AbEWwPRL/VOIooxOt7nPhMXAiVofUGFk0WU9jyEgLtzibZ0sqfMOPrJWsBDmuhCHtz/EQwtp4ZJJAhShROm/0ruw762i3W2i1nxxeg%2bO6ig38CT0p5yTQW/m03OnCF0mBdHgBVOZX%2bb5Rg7PlIzymbfOy0v/rPQbc%2bNhq60rZkCEi/sfJWn0jxKc2ls9mBk3Y5ZCOfVrjsmmvsfwGQULL3e7uONygL5wvXjzvhSCurQEVVLtivTlA0kw6vm7Rl8Ip8cCBjetMiX8H2rHcBRvxPLmT6ZUEAkpGs2RjyzbEwLlznEHWMnnTFyRwbvzM5GkWNwa0MlLtaWTimAvVhYzoYQOulK9S16F0Pe15R3WtSXru37XSpWe1qssOFkWKQAzrgV7quXd6yThbEHRdaisro9rXH20TbU2oAoQdcvC42k9dC2%2bvNbU6NjJbeK%2bR3xc2MHSM28KOv52iRLsVQNpVhhefi0lK4fH3qc8QJ/8Ptb%2bvkDESR6FwQwGsirlZKOckxWga85bCLdXAGyqZ/L2kYy5KI/XfL7LFW/65BmjIk1d8xcssyf5QthlrygdVQSND6eMSCiCfE0OMbAg%3d%3d">
+        <button  (click)= toggle()  class="button is-primary button is-medium has-text-weight-semibold"><i [@downloadButton]="isOpen ? 'open' : 'closed'" class="far fa-paper-plane pr-4"></i>Download CV</button>
+      </a>
+      </div>
+
     </div>
     </div>
 </section>
@@ -67,7 +70,7 @@
 
 <div class="columns pt-6 mt-6 is-centered">
 
-  <div class="column" *ngFor="let skill of skills">
+  <div class="column" *ngFor="let skill of skills" [@flyFromRight]>
     <app-progressbar [value]=skill.per [skill]=skill.name [icon]=skill.icon></app-progressbar>
 
 
