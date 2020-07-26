@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
     { name: 'title', content: this.author },
     {name: 'robots', content: 'index, follow'},
     { name: 'viewport', content: "width=device-width, initial-scale=1" },
-    { charset: "UTF-8"},
+    // { charset: "UTF-8"},
 
     // <!-- Twitter -->
     { name: 'twitter:card', content: "summary_large_image" },
