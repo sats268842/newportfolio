@@ -46,8 +46,7 @@ export class AppComponent implements OnInit {
      //  <!-- Open Graph / Facebook -->
     // { name: 'og:type', content: 'website' },
     { name: 'og:url', content: this.site },
-    { property: 'og:type', content: "website
-  },
+    { property: 'og:type', content: "website"},
     { name: 'og:title', content: this.author },
     { name: 'og:description', content: this.description },
     { name: 'og:image', content: this.imageUrl },
