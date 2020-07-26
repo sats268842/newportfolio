@@ -25,30 +25,25 @@ import {
       state('in', style({ transform: 'translateX(0)' })),
       transition('void => *', [
         style({ transform: 'translateX(90%)' }),
-        animate(800)
+        animate(400)
       ]),
       transition('* => void', [
         animate(500, style({ transform: 'translateX(-100%)' }))
       ])
     ]),
     trigger('downloadButton', [
-      state('open', style({
-        // opacity: 0,
-        transform: 'rotate(0deg)'
-      })),
+
       state('closed', style({
         transform: 'rotate(-360deg)',
-        // opacity: 0,
+        // opacity: 0.1,
         // animate: '2s infinite',
       })),
-      transition('* => closed', [
+      transition('* <=> closed', [
 
-        animate('1s')
+        animate('0.5s')
       ]),
 
-      transition('closed => *', [
-        animate('0.1s')
-      ]),
+
     ])
   ],
 
