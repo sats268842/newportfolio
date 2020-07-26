@@ -31,25 +31,25 @@ export class AppComponent implements OnInit {
     { name: 'Copyright', content: this.author },
     { name: 'title', content: this.author },
     {name: 'robots', content: 'index, follow'},
-    { name: 'viewport', content: "width=device-width, initial-scale=1" },
+    // { name: 'viewport', content: "width=device-width, initial-scale=1" },
     // { charset: "UTF-8"},
 
     // <!-- Twitter -->
-    { name: 'twitter:card', content: "summary_large_image" },
-    { name: 'twitter:site', content: this.site },
-    { name: 'twitter:title', content: this.author },
-    { name: 'twitter:description', content: this.description },
-    { name: 'twitter:creator', content: this.author },
-    { name: 'twitter:image', content: this.imageUrl },
-    { name: ' twitter:description', content: this.description },
+    { property: 'twitter:card', content: "summary_large_image" },
+    { property: 'twitter:site', content: this.site },
+    { property: 'twitter:title', content: this.author },
+    { property: 'twitter:description', content: this.description },
+    { property: 'twitter:creator', content: this.author },
+    { property: 'twitter:image', content: this.imageUrl },
+    { property: ' twitter:description', content: this.description },
 
      //  <!-- Open Graph / Facebook -->
-    // { name: 'og:type', content: 'website' },
-    { name: 'og:url', content: this.site },
+    // { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: this.site },
     { property: 'og:type', content: "website"},
-    { name: 'og:title', content: this.author },
-    { name: 'og:description', content: this.description },
-    { name: 'og:image', content: this.imageUrl },
+    { property: 'og:title', content: this.author },
+    { property: 'og:description', content: this.description },
+    { property: 'og:image', content: this.imageUrl },
 
   ]);
 }
