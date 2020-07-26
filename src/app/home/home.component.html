@@ -1,23 +1,23 @@
 <section class="landing">
   <div class="landing-image is-hidden-touch"></div>
-<div class="columns">
+<div class="columns  ">
 
-  <div class="column ">
+  <div class="column">
 
 
     <div class="home-text ">
 
     <h5>Hi, there!</h5>
-    <h1 class="has-text-weight-bold is-size-3-touch is-size-1">I'm Santhosh Thomas</h1>
+    <h1 class="has-text-weight-bold is-size-3-touch is-size-1  " [@flyInOut]>I'm Santhosh Thomas</h1>
     <p>Web Developer</p>
     <div class="buttons pt-5">
-    <button class="button is-primary button is-normal has-text-weight-semibold pl-5 pr-5">Hire Me</button>
+    <button (click)="toggle()" [@flyInOut] class="button is-primary button is-normal has-text-weight-semibold pl-5 pr-5">Hire Me</button>
     </div>
 
-    <div class="columns pt-3">
+    <div class="columns pt-3" [@flyInOut]>
       <div class="column  has-text-weight-semibold is-size-5">
        <p>Email</p>
-       <p class="is-size-6">santhoshthomas015@gmail.com</p>
+       <p class="is-size-6" >santhoshthomas015@gmail.com</p>
         </div>
         <div class="column  has-text-weight-semibold is-size-5">
         <p>Phone</p>

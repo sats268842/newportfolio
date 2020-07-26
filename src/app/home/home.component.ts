@@ -1,12 +1,56 @@
 import { Component, OnInit } from '@angular/core';
-
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+} from '@angular/animations'
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  animations: [
+    trigger('openClose', [
+      // ...
+      state('open', style({
+
+        opacity: 1,
+      })),
+      state('closed', style({
+
+        opacity: 0.5,
+      })),
+      transition('open => closed', [
+        animate('1s')
+      ]),
+      transition('* => void', [
+        animate('0.5s')
+      ]),
+      transition('closed => open', [
+        animate('0.1s')
+      ]),
+    ]),
+    trigger('flyInOut', [
+      state('in', style({ transform: 'translateX(0)' })),
+      transition('void => *', [
+        style({ transform: 'translateX(-100%)' }),
+        animate(800)
+      ]),
+      transition('* => void', [
+        animate(500, style({ transform: 'translateX(100%)' }))
+      ])
+    ])
+  ],
+
 })
 export class HomeComponent implements OnInit {
 
+  isOpen = true;
+
+  toggle() {
+    this.isOpen = !this.isOpen;
+  }
 
   skills = [
     {
