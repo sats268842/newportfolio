@@ -12,7 +12,8 @@ import { FooterComponent } from './ui/footer/footer.component';
     AppComponent,
     HomeComponent,
     ProgressbarComponent,
-    FooterComponent
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
