@@ -9,7 +9,7 @@ export class AppComponent implements OnInit {
   title = "Santhosh Thomas | Front End Web Developer";
 
 
-  imageUrl = "https://resume268842.s3.ap-south-1.amazonaws.com/santhosh.jpg";
+  imageUrl = "https://santhoshporfolio.s3.ap-south-1.amazonaws.com/santhosh.jpg";
   site = "http://santhoshthomas.xyz/";
   author = "Santhosh Thomas";
   description = "A design-minded front-end software engineer focused on building beautiful interfaces & experiences. I\' m currently pursuing Computer Science and Engineering from APJ Abdul Kalam Technological University. As a software engineer, I enjoy bridging the gap between engineering and design combining my technical knowledge with my keen eye for design to create a beautiful product. My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences. My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.";
@@ -31,6 +31,7 @@ export class AppComponent implements OnInit {
     { name: 'Copyright', content: this.author },
     { name: 'title', content: this.author },
     {name: 'robots', content: 'index, follow'},
+    {name: 'image', content: this.imageUrl},
     // { name: 'viewport', content: "width=device-width, initial-scale=1" },
     // { charset: "UTF-8"},
 

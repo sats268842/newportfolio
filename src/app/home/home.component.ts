@@ -92,22 +92,22 @@ export class HomeComponent implements OnInit {
       {
         name: 'RESPONSIVE DESIGN',
         description: 'Responsive web design (RWD) is a web development approach that creates dynamic changes to the appearance of a website, depending on the screen size and orientation of the device being used to view it ',
-        imageUrl: '../../assets/service1.png'
+        imageUrl: 'https://santhoshporfolio.s3.ap-south-1.amazonaws.com/service1.png'
       },
       {
         name: 'UI/UX',
         description: 'User interface design or user interface engineering is the design of user interfaces for machines and software, such as computers, home appliances, mobile devices, and other electronic devices, with the focus on maximizing usability and the user experience.',
-        imageUrl: '../../assets/ux.png'
+        imageUrl: 'https://santhoshporfolio.s3.ap-south-1.amazonaws.com/ux.png'
       },
       {
         name: 'WEB DEVELOPMENT',
         description: 'Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web-based internet applications, electronic businesses, and social network services.',
-        imageUrl: '../../assets/code.png'
+        imageUrl: 'https://santhoshporfolio.s3.ap-south-1.amazonaws.com/code.png'
       },
       {
         name: 'GRAPHIC DESIGN',
         description: 'Graphic design is the process of visual communication and problem-solving through the use of typography, photography, iconography and illustration. The field is considered a subset of visual communication and communication design, but sometimes the term "graphic design" is used synonymously.',
-        imageUrl: '../../assets/pen.png'
+        imageUrl: 'https://santhoshporfolio.s3.ap-south-1.amazonaws.com/pen.png'
       }
     ];
 
@@ -116,22 +116,22 @@ export class HomeComponent implements OnInit {
       {
         name: 'Covid Tracker',
         url: 'https://covidtracker.santhoshthomas.xyz/',
-        imageurl: '../../assets/covidtracke.png'
+        imageurl: 'https://santhoshporfolio.s3.ap-south-1.amazonaws.com/covidtracke.png'
       },
       {
         name: 'Note App',
         url: 'https://scrapbook.santhoshthomas.xyz/',
-        imageurl: '../../assets/scrapbook.png'
+        imageurl: 'https://santhoshporfolio.s3.ap-south-1.amazonaws.com/scrapbook.png'
       },
       {
         name: 'Blog',
         url: 'https://blog.santhoshthomas.xyz/',
-        imageurl: '../../assets/covidtracke.png'
+        imageurl: 'https://santhoshporfolio.s3.ap-south-1.amazonaws.com/scrapbook.png'
       },
       {
         name: 'Old Portfolio',
         url: 'https://old.santhoshthomas.xyz/',
-        imageurl: '../../assets/oldportfolio.png'
+        imageurl: 'https://santhoshporfolio.s3.ap-south-1.amazonaws.com/oldportfolio.png'
       }
     ];
 
