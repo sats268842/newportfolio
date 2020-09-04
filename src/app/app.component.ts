@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
     { property: 'twitter:title', content: this.author },
     { property: 'twitter:description', content: this.description },
     { property: 'twitter:creator', content: this.author },
-    { property: 'twitter:image',  itemprop: "image" ,content: this.imageUrl },
+    { property: 'twitter:image',  itemprop: 'image' ,content: this.imageUrl },
     { property: ' twitter:description', content: this.description },
 
      //  <!-- Open Graph / Facebook -->
