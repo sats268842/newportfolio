@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
     { property: 'og:type', content: "website"},
     { property: 'og:title', content: this.author },
     { property: 'og:description', content: this.description },
-    { property: 'og:image',  itemprop: 'image', content: this.imageUrl },
+    { property: 'og:image:secure_url',  itemprop: 'image', content: this.imageUrl },
 
   ]);
 }
