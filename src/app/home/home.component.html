@@ -15,7 +15,7 @@
     <div class="home-text ">
 
     <h5>Hi, there!</h5>
-    <h1 class="has-text-weight-bold is-size-3-touch is-size-1  " [@flyInOut]>I'm Santhosh Thomas</h1>
+    <h1 class="has-text-weight-bold is-size-3-touch is-size-1  name" >I'm Santhosh Thomas</h1>
     <p>Web Developer</p>
     <p>
     <span class="pr-2 pl-2"><a target="_unblank" href="https://www.linkedin.com/in/santhoshthomas268842/" title="linkedin"><i class="fab fa-linkedin-in"></i> </a></span>
@@ -24,10 +24,10 @@
     <span class="pr-2 pl-2"><a target="_unblank" href="https://www.instagram.com/san_thos_h/" title="instagram"><i class="fab fa-instagram"></i></a></span>
     </p>
     <div class="buttons pt-5">
-    <button (click)="toggle()" [@flyInOut] class="button is-primary button is-normal has-text-weight-semibold pl-5 pr-5">Hire Me</button>
+    <button (click)="toggle()" class="button is-primary button is-normal has-text-weight-semibold pl-5 pr-5">Hire Me</button>
     </div>
 
-    <div class="columns pt-3" [@flyInOut]>
+    <div class="columns pt-3 animate__animated animate__pulse" >
       <div class="column  has-text-weight-semibold is-size-5">
        <p>Email</p>
        <p class="is-size-6" >santhoshthomas015@gmail.com</p>
@@ -36,7 +36,7 @@
         <p>Phone</p>
         <p class="is-size-6">(+91)9074134303</p>
         </div>
-        <div class="column = has-text-weight-semibold is-size-5">
+        <div class="column  has-text-weight-semibold is-size-5">
           <p>Location</p>
         <p class="is-size-6">Kerala, India</p>
 
@@ -54,18 +54,18 @@
 </section>
 
 
-<section class="pt-6 about-section container">
+<section class="pt-6 about-section container" cdkScrollable>
   <br>
 <h1 class="is-size-1 has-text-weight-bold has-text-primary has-text-centered-touch">About <span class="has-text-link">Me</span></h1>
 
 <div class="columns pt-6 mt-6">
-  <div class="column">
+  <div class="column animate__animated animate__fadeIn">
     <img class="image" alt="About Me Image"  src="https://santhoshporfolio.s3.ap-south-1.amazonaws.com/about.svg">
   </div>
-    <div class="column" [@flyFromRight]>
-      <h1 class="is-size-2 pt-6 has-text-weight-semibold has-text-primary is-size-3-touch">Santhosh Thomas</h1>
+    <div class="column" data-aos="fade-left">
+      <h1 class="is-size-2 pt-6 has-text-weight-semibold has-text-primary is-size-3-touch ">Santhosh Thomas</h1>
 
-      <p class="is-size-5 has-text-weight-medium has-text-link pt-6" >I am a Website designer, developer & graphic designer. A design minded front-end software engineer focused on building beautiful interfaces & experience.  My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.</p>
+      <p class="is-size-5 has-text-weight-medium has-text-link pt-6 " >I am a Website designer, developer & graphic designer. A design minded front-end software engineer focused on building beautiful interfaces & experience.  My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.</p>
       <div class="buttons pt-6">
         <a  download="Resume-Santhosh-Thomas.pdf" href="https://santhoshporfolio.s3.ap-south-1.amazonaws.com/Resume-Santhosh-Thomas.pdf">
         <button  (click)= toggle()  class="button is-primary button is-medium has-text-weight-semibold"><i [@downloadButton]="isOpen ? 'open' : 'closed'" class="far fa-paper-plane pr-4"></i>Download CV</button>
@@ -81,9 +81,9 @@
   <br>
 <h1 class="is-size-1 has-text-weight-bold has-text-primary">My <span class="has-text-link">Skills</span></h1>
 
-<div class="columns pt-6 mt-6 is-centered">
+<div class="columns pt-6 mt-6 is-centered"  data-aos="zoom-in-up">
 
-  <div class="column" *ngFor="let skill of skills" [@flyFromRight]>
+  <div class="column" *ngFor="let skill of skills">
     <app-progressbar [value]=skill.per [skill]=skill.name [icon]=skill.icon></app-progressbar>
 
 

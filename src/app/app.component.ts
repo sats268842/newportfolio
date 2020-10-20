@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+
+
+import * as AOS from 'aos';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,9 +19,12 @@ export class AppComponent implements OnInit {
 
  constructor(private metaTagService: Meta,
              private titleService: Title
-            ){ }
+            ){
+              console.log(AOS);
+            }
 
  ngOnInit(): void {
+  AOS.init();
   this.titleService.setTitle(this.title);
   this.metaTagService.addTags([
 
