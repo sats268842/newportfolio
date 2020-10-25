@@ -156,36 +156,17 @@
 
 
 
-<section class="pt-6 works-section container">
+<section class="pt-6 container">
   <br>
 <h1 class="is-size-1 has-text-weight-bold has-text-primary has-text-centered-touch">My <span class="has-text-link">Works</span></h1>
-<div class="container">
-<div class="columns pt-6" >
+<div class="hero">
+<div class="columns is-centered pt-6">
+<div class="column">
+    <img class="image" alt="education image" src="../../assets/carbon.png">
+</div>
 
-  <div class="column" *ngFor="let work of works">
-    <div class="card">
-      <div class="card-image">
-        <figure class="image  ">
-          <img  alt="Works Image"  [src]=work.imageurl >
-        </figure>
-      </div>
-      <div class="card-content">
-        <div class="media">
-
-          <div class="media-content">
-         <a target="_unblank" href={{work.url}}> <h1 class="has-text-centered has-text-white is-size-4 is-size-6-touch has-text-weight-medium">{{ work.name }}</h1></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-      </div>
-  </div>
-
-  </div>
-
-
+ </div>
+</div>
 </section>
 
 
