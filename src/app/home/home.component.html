@@ -21,7 +21,7 @@
 
     <h5>Hi, there!</h5>
     <h1 class="has-text-weight-bold is-size-3-touch is-size-1  name" >I'm Santhosh Thomas</h1>
-    <p>Web Developer</p>
+    <p class="has-text-danger">Web Developer</p>
     <p>
     <span class="pr-2 pl-2"><a target="_unblank" href="https://www.linkedin.com/in/santhoshthomas268842/" title="linkedin"><i class="fab fa-linkedin-in"></i> </a></span>
     <span class="pr-2 pl-2"><a target="_unblank" href="https://www.behance.net/santhoshthomas" title="behance"><i class="fab fa-behance"></i></a></span>
@@ -29,7 +29,7 @@
     <span class="pr-2 pl-2"><a target="_unblank" href="https://www.instagram.com/san_thos_h/" title="instagram"><i class="fab fa-instagram"></i></a></span>
     </p>
     <div class="buttons pt-5">
-    <button (click)="toggle()" class="button is-primary button is-normal has-text-weight-semibold pl-5 pr-5">Hire Me</button>
+    <button (click)="toggle()" class="button is-danger button is-normal has-text-weight-semibold pl-5 pr-5">Hire Me</button>
     </div>
 
     <div class="columns pt-3 animate__animated animate__pulse" >
@@ -101,11 +101,20 @@
 
 <section class="pt-6 education-section container">
   <br>
-<h1 class="is-size-1 has-text-weight-bold has-text-primary has-text-centered-touch">My <span class="has-text-link">Education</span></h1>
-<div class="hero">
-<div class="columns pt-6 pb-6 mt-6">
 
-    <img class="image" alt="education image" src="https://santhoshporfolio.s3.ap-south-1.amazonaws.com/education.png">
+<div class="hero">
+<div class="columns pt-6  is-centered">
+  <div class="column">
+  <h1 class="is-size-1  pb-6 has-text-weight-bold has-text-primary has-text-centered-touch">My <span class="has-text-link">Education</span></h1>
+      <app-education-timeline></app-education-timeline>
+    <!-- <img class="image" alt="education image" src="https://santhoshporfolio.s3.ap-south-1.amazonaws.com/education.png"> -->
+</div>
+
+<div class="column">
+  <h1 class="is-size-1  pb-6 has-text-weight-bold has-text-primary has-text-centered-touch">My <span class="has-text-link">Experience</span></h1>
+  <app-experience-timeline></app-experience-timeline>
+<!-- <img class="image" alt="education image" src="https://santhoshporfolio.s3.ap-south-1.amazonaws.com/education.png"> -->
+</div>
 </div>
 </div>
 </section>

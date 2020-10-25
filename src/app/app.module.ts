@@ -9,6 +9,8 @@ import { ProgressbarComponent } from './ui/progressbar/progressbar.component';
 import { FooterComponent } from './ui/footer/footer.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EducationTimelineComponent } from './ui/education-timeline/education-timeline.component';
+import { ExperienceTimelineComponent } from './ui/experience-timeline/experience-timeline.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     ProgressbarComponent,
     FooterComponent,
+    EducationTimelineComponent,
+    ExperienceTimelineComponent,
 
   ],
   imports: [

@@ -1,0 +1,19 @@
+<div class="timeline">
+  <!-- <header class="timeline-header">
+    <span class="tag is-medium is-danger"></span>
+  </header> -->
+  <div class="timeline-item is-danger" *ngFor="let edu of education">
+    <div class="timeline-marker is-link"></div>
+    <div class="timeline-content">
+      <p class="heading">{{ edu.year }}</p>
+      <span class="tag is-medium is-danger"><p class="is-size-7 has-text-weight-semibold">{{edu.cousre}}</p></span>
+      <!-- <h4 class="is-size-7">{{edu.cousre}}</h4> -->
+      <br/>
+      <p class="is-size-6 has-text-weight-medium" [innerHTML]=edu.school></p>
+    </div>
+  </div>
+
+  <!-- <header class="timeline-header">
+    <span class="tag is-medium is-danger"></span>
+  </header> -->
+</div>
