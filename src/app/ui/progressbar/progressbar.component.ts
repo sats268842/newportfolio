@@ -6,9 +6,9 @@ import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
   styleUrls: ['./progressbar.component.scss']
 })
 export class ProgressbarComponent {
-  @Input() value: number = 0;
-  @Input() skill: string = '';
-  @Input() icon: string = '';
+  @Input() value= 0;
+  @Input() skill= '';
+  @Input() icon = '';
 
   public circumference: number = 2 * Math.PI * 47;
   public strokeDashoffset: number = 0;

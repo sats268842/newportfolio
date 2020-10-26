@@ -5,7 +5,7 @@ import {
   style,
   animate,
   transition
-} from '@angular/animations'
+} from '@angular/animations';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -55,10 +55,11 @@ export class HomeComponent implements OnInit {
   isOpen = true;
 
   toggle() {
-    console.log(this.isOpen)
+    console.log(this.isOpen);
     this.isOpen = !this.isOpen;
   }
 
+  // tslint:disable-next-line: member-ordering
   skills = [
     {
       name: 'Angular',
