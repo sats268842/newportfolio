@@ -1,23 +1,19 @@
 <div class="landing-image is-hidden-touch"></div>
 
 <section class="landing">
-  <!-- <div class="custom-shape-divider-top-1603205819">
-  g>  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg
-  </div> -->
+
   <div class="container">
 
 
 
 
-<div class="columns  ">
+<div class="columns"   >
 
 
-  <div class="column">
+  <div class="column"  [ngsInterval]="500"  [ngsRevealSet]="{ reset:false}" [ngsSelector]="'.column'">
 
 
-    <div class="home-text ">
+    <div class="home-text">
 
     <h5>Hi, there!</h5>
     <h1 class="has-text-weight-bold is-size-3-touch is-size-1  name" >I'm Santhosh Thomas</h1>
@@ -32,7 +28,7 @@
     <button (click)="toggle()" class="button is-danger button is-normal has-text-weight-semibold pl-5 pr-5">Hire Me</button>
     </div>
 
-    <div class="columns pt-3 animate__animated animate__pulse" >
+    <div class="columns pt-3" >
       <div class="column  has-text-weight-semibold is-size-5">
        <p>Email</p>
        <p class="is-size-6" >santhoshthomas015@gmail.com</p>
@@ -59,17 +55,17 @@
 </section>
 
 
-<section class="pt-6 about-section container" cdkScrollable>
+<section class="pt-6 about-section container">
   <br>
 <h1 class="is-size-1 has-text-weight-bold has-text-primary has-text-centered-touch">About <span class="has-text-link">Me</span></h1>
 
-<div class="columns pt-6 mt-6">
+<div class="columns pt-6 mt-6" [ngsRevealSet]="{ reset:false}">
   <div class="column is-mobile">
 
-  <img data-aos="zoom-in" src="https://santhoshporfolio.s3.ap-south-1.amazonaws.com/about.svg" class="image" alt="">
+  <img data-aos="zoom-in" src="https://santhoshporfolio.s3.ap-south-1.amazonaws.com/about.svg" class="image scale-up-center" alt="">
   </div>
 
-    <div class="column" data-aos="fade-left">
+    <div class="column" >
       <h1 class="is-size-2 pt-6 has-text-weight-semibold has-text-primary is-size-3-touch ">Santhosh Thomas</h1>
 
       <p class="is-size-5 has-text-weight-medium has-text-link pt-6 " >I am a Website designer, developer & graphic designer. A design minded front-end software engineer focused on building beautiful interfaces & experience.  My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.</p>
@@ -84,11 +80,11 @@
 </section>
 
 
-<section class="pt-6 skill-section container">
+<section class="pt-6 skill-section container "  >
   <br>
 <h1 class="is-size-1 has-text-weight-bold has-text-primary">My <span class="has-text-link">Skills</span></h1>
 
-<div class="columns pt-6 mt-6 is-centered"  data-aos="zoom-in-up">
+<div class="columns pt-6 mt-6 is-centered"   [ngsRevealSet]="{reset:false}">
 
   <div class="column" *ngFor="let skill of skills">
     <app-progressbar [value]=skill.per [skill]=skill.name [icon]=skill.icon></app-progressbar>
@@ -100,7 +96,7 @@
 </section>
 
 
-<section class="pt-6 education-section container">
+<section class="pt-6 education-section container" >
   <br>
 
 <div class="hero">
@@ -122,13 +118,13 @@
 
 
 
-<section class="pt-6 service-section container">
+<section class="pt-6 service-section container" >
   <br>
 <h1 class="is-size-1 has-text-weight-bold has-text-primary has-text-centered-touch">My <span class="has-text-link">Services</span></h1>
 <div class="container">
-<div class="columns pt-6 " >
+<div class="columns pt-6 ">
 
-  <div class="column" *ngFor="let service of services">
+  <div class="column" *ngFor="let service of services"   [ngsRevealSet]="{ reset:true}" [ngsSelector]="'.media'">
 
       <article class="media">
         <figure class="media-left">
@@ -163,7 +159,7 @@
 <div class="hero">
 <div class="columns is-centered pt-6">
 <div class="column">
-    <img class="image" alt="education image" src="../../assets/carbon.png">
+    <img class="image" alt="education image" src="../../assets/carbon.png" [ngsReveal]="{ reset: true}">
 </div>
 
  </div>

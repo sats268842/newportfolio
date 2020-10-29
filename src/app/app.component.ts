@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
   this.metaTagService.addTags([
 
     // <!-- Primary Meta Tags -->
-    { name: 'keywords', content: 'Angular SEO Integration, Angular, Bootstrap, Html, CSS, Portfolio, Developer, Designer, UI, UX, Freelancer, Indian, Kerala, Student, Adoor, santhosh, thomas, graphic design, web design, website builder, adobe, photoshop, illustrator, flutter, app, firebase, html, css, sjcet, palai, santhoshthomas, web, hacker, figma, XD, sketch, UI, UX, Prototype, Freelancer, backend, frontend, webdeveloper, ProductDesinger, Kottayam, AWS, santhosh_thomas, santhoshdeveloper, santhoshsjcet, santhoshadoor, SJCETPALAI, SJCET' },
+    { name: 'keywords', content: 'Angular SEO Integration, Angular, Bootstrap, Html, CSS, Portfolio, Developer, Designer, UI, UX, Freelancer, Indian, Kerala, Student, Adoor, santhosh, thomas, graphic design, web design, website builder, adobe, photoshop, illustrator, flutter, app, firebase, html, css, sjcet, palai, santhosh thomas, web, hacker, figma, XD, sketch, UI, UX, Prototype, Freelancer, backend, frontend, web developer, Product Desinger, Kottayam, AWS, santhosh_thomas, santhosh developer, santhosh sjcet, santhosh adoor, SJCET PALAI, SJCET, SANTHOSH THOMAS' },
     {name: 'description', content: this.description},
     { name: 'author', content: this.author },
     { name: 'owner', content: this.author },

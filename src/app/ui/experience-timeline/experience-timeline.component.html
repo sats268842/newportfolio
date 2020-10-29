@@ -2,7 +2,7 @@
   <!-- <header class="timeline-header">
     <span class="tag is-medium is-danger"></span>
   </header> -->
-  <div class="timeline-item is-danger" *ngFor="let edu of experience">
+  <div class="timeline-item is-danger" *ngFor="let edu of experience"  [ngsInterval]="500"  [ngsRevealSet]="{ reset:false}" [ngsSelector]="'.timeline-content'">
     <div class="timeline-marker is-link"></div>
     <div class="timeline-content scale-up-center">
       <p class="heading">{{ edu.year }}</p>

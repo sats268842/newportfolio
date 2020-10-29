@@ -11,6 +11,7 @@ import { FooterComponent } from './ui/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EducationTimelineComponent } from './ui/education-timeline/education-timeline.component';
 import { ExperienceTimelineComponent } from './ui/experience-timeline/experience-timeline.component';
+import {NgsRevealModule} from 'ngx-scrollreveal';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ExperienceTimelineComponent } from './ui/experience-timeline/experience
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
+    NgsRevealModule,
     BrowserAnimationsModule
   ],
   providers: [],

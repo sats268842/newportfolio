@@ -10,54 +10,12 @@ import {
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  animations: [
-    trigger('flyInOut', [
-      state('in', style({ transform: 'translateX(0)' })),
-      transition('void => *', [
-        style({ transform: 'translateX(-100%)' }),
-        animate(800)
-      ]),
-      transition('* => void', [
-        animate(500, style({ transform: 'translateX(100%)' }))
-      ])
-    ]),
-    trigger('flyFromRight', [
-      state('in', style({ transform: 'translateX(0)' })),
-      transition('void => *', [
-        style({ transform: 'translateX(90%)' }),
-        animate(400)
-      ]),
-      transition('* => void', [
-        animate(500, style({ transform: 'translateX(-100%)' }))
-      ])
-    ]),
-    trigger('downloadButton', [
-
-      state('closed', style({
-        transform: 'rotate(-360deg)',
-        // opacity: 0.1,
-        // animate: '2s infinite',
-      })),
-      transition('* <=> closed', [
-
-        animate('0.5s')
-      ]),
-
-
-    ])
-  ],
-
-
-
 })
 export class HomeComponent implements OnInit {
 
-  isOpen = true;
+  constructor() { }
 
-  toggle() {
-    console.log(this.isOpen);
-    this.isOpen = !this.isOpen;
-  }
+  isOpen = true;
 
   // tslint:disable-next-line: member-ordering
   skills = [
@@ -136,10 +94,14 @@ export class HomeComponent implements OnInit {
       }
     ];
 
-  constructor() { }
+  toggle() {
+    console.log(this.isOpen);
+    this.isOpen = !this.isOpen;
+  }
 
 
   ngOnInit(): void {
   }
+
 
 }
