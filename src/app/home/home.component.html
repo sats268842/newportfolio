@@ -55,7 +55,7 @@
 </section>
 
 
-<section class="pt-6 about-section container">
+<section class="pt-6 pb-6 about-section container">
   <br>
 <h1 class="is-size-1 has-text-weight-bold has-text-primary has-text-centered-touch">About <span class="has-text-link">Me</span></h1>
 
@@ -79,15 +79,25 @@
     </div>
 </section>
 
+<section [ngsReveal]="{ reset: false}"  class="hero is-primary is-medium pt-6" style="background-image: url('../../assets/bg1.jpg');
+background-position: center;
+background-size: cover;
+opacity: 0.9;/*now this is known for the safari*/ ">
+  <div class="hero-body">
+    <div class="container">
+      <button class="button is-outlined is-white is-medium is-fullwidth has-text-weight-semibold has-text-danger">VIEW MY WORK</button>
+    </div>
+  </div>
+</section>
 
-<section class="pt-6 skill-section container "  >
+<section class="pt-6 skill-section container ">
   <br>
 <h1 class="is-size-1 has-text-weight-bold has-text-primary">My <span class="has-text-link">Skills</span></h1>
 
-<div class="columns pt-6 mt-6 is-centered"   [ngsRevealSet]="{reset:false}">
+<div class="columns pt-6 mt-6 is-centered"   [ngsRevealSet]="{reset:false}" [ngsSelector]="'.skill'" >
 
-  <div class="column" *ngFor="let skill of skills">
-    <app-progressbar [value]=skill.per [skill]=skill.name [icon]=skill.icon></app-progressbar>
+  <div class="column" *ngFor="let skill of skills" >
+    <app-progressbar class=skill [value]=skill.per [skill]=skill.name [icon]=skill.icon></app-progressbar>
 
 
     </div>
