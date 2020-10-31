@@ -26,6 +26,7 @@ export class AppComponent implements OnInit {
  ngOnInit(): void {
   AOS.init();
   this.titleService.setTitle(this.title);
+
   this.metaTagService.addTags([
 
     // <!-- Primary Meta Tags -->
