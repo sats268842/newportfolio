@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import {
   trigger,
   state,
@@ -6,6 +6,9 @@ import {
   animate,
   transition
 } from '@angular/animations';
+
+import { SwiperOptions } from 'swiper'
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -13,8 +16,46 @@ import {
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
+  public currentNumber: number = 1;
+	public example: any = null;
+	public images: string[] = [
+    'https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606156551/portfolio/2cdb89107567489.5faa583a0b1ff_qvyinz.png',
+    'https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606156580/portfolio/Untitled-1_fhx8bo.png',
+    'https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606156825/portfolio/Bsafe_2_nwp7v7.png',
+    'https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606156923/portfolio/f9b8f8107309159.5fa405e129ed7_fegtrz.png',
+    'https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606157076/portfolio/keynote_p20elq.png',
+    'https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606157084/portfolio/sdasf_zkhwsa.png',
+    'https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606157131/portfolio/problemstatement2final_bzhanr.png',
+    'https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606157131/portfolio/problemstatement8_glxin6.png',
+    'https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606157131/portfolio/problemstatement5_afnynq.png',
+    'https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606157131/portfolio/manojabharam_eringz.png',
+    'https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606157133/portfolio/hackpfinal2_vrgiix.png'
+  ]
+	public examples: any[] = [
+		{
+			title: 'Simple use',
+			html: '<slider-carousel [images]="example.images"></slider-carousel>'
+		},
+		{
+			title: 'With auto-size',
+			html: '<slider-carousel [images]="example.images" [auto-size]="true"></slider-carousel>'
+		},
+		{
+			title: 'With auto-size and max-width',
+			html: '<slider-carousel [images]="example.images" [auto-size]="true" max-width="500px"></slider-carousel>'
+		},
+		{
+			title: 'With fixed height and max-width',
+			html: '<slider-carousel [images]="example.images" height="350px" max-width="600px"></slider-carousel>'
+		}
+	];
+  constructor() {
+    this.selectExample(1);
+   }
+	selectExample(number: number) {
+		this.currentNumber = number;
+		this.example = this.examples[this.currentNumber - 1];
+	}
   isOpen = true;
 
   // tslint:disable-next-line: member-ordering

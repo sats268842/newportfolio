@@ -13,6 +13,8 @@ import { EducationTimelineComponent } from './ui/education-timeline/education-ti
 import { ExperienceTimelineComponent } from './ui/experience-timeline/experience-timeline.component';
 import {NgsRevealModule} from 'ngx-scrollreveal';
 
+import { SliderCarouselModule } from 'slider-carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,8 @@ import {NgsRevealModule} from 'ngx-scrollreveal';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     NgsRevealModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SliderCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
