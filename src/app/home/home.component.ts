@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import {
   trigger,
   state,
@@ -7,6 +7,9 @@ import {
   transition
 } from '@angular/animations';
 
+import { isPlatformBrowser } from '@angular/common';
+
+import { PLATFORM_ID } from '@angular/core';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,6 +18,7 @@ import {
 export class HomeComponent implements OnInit {
 
   public currentNumber: number = 1;
+  browser: boolean =false;
 	public example: any = null;
 	public images: string[] = [
     'https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606156551/portfolio/2cdb89107567489.5faa583a0b1ff_qvyinz.png',
@@ -47,7 +51,10 @@ export class HomeComponent implements OnInit {
 			html: '<slider-carousel [images]="example.images" height="350px" max-width="600px"></slider-carousel>'
 		}
 	];
-  constructor() {
+  constructor( @Inject(PLATFORM_ID) private platformId: Object) {
+    // isPlatformBrowser(this.platformId)
+    console.log(isPlatformBrowser(this.platformId))
+    this.browser  =isPlatformBrowser(this.platformId)
     this.selectExample(1);
    }
 	selectExample(number: number) {
