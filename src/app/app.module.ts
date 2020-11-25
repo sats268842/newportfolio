@@ -17,7 +17,7 @@ import { SliderCarouselModule } from 'slider-carousel';
 
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 // Import library module
-import { NgxSpinnerModule } from "ngx-spinner";
+// import { NgxSpinnerModule } from "ngx-spinner";
 
 
 @NgModule({
@@ -35,7 +35,7 @@ import { NgxSpinnerModule } from "ngx-spinner";
     AppRoutingModule,
     NgsRevealModule,
     BrowserAnimationsModule,
-    NgxSpinnerModule,
+    // NgxSpinnerModule,
     SliderCarouselModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
