@@ -15,6 +15,11 @@ import {NgsRevealModule} from 'ngx-scrollreveal';
 
 import { SliderCarouselModule } from 'slider-carousel';
 
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+// Import library module
+import { NgxSpinnerModule } from "ngx-spinner";
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,8 +35,10 @@ import { SliderCarouselModule } from 'slider-carousel';
     AppRoutingModule,
     NgsRevealModule,
     BrowserAnimationsModule,
+    NgxSpinnerModule,
     SliderCarouselModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -7,7 +7,7 @@ import {
   transition
 } from '@angular/animations';
 
-import { SwiperOptions } from 'swiper'
+import { SwiperOptions } from 'swiper';
 
 @Component({
   selector: 'app-home',

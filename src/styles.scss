@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~slider-carousel/slider-carousel.scss';
+@include slider-carousel();
 @import '../src/main-style.scss';
 @import '../node_modules/bulma/bulma.sass';
 @import '../node_modules/bulma-timeline/dist/css/bulma-timeline.sass';
-@import '~slider-carousel/slider-carousel.scss';
-@include slider-carousel();

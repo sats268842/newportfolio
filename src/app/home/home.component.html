@@ -59,7 +59,7 @@
   <br>
 <h1 class="is-size-1 has-text-weight-bold has-text-primary has-text-centered-touch">About <span class="has-text-link">Me</span></h1>
 
-<div class="columns pt-6 mt-6" [ngsRevealSet]="{ reset:false}">
+<div class="columns pt-6 mt-6" [ngsRevealSet]="{ reset:false}" [ngsSelector]="'.column'">
   <div class="column is-mobile">
 
   <img data-aos="zoom-in" src="https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1599595534/portfolio/about_w59gsf.svg" class="image scale-up-center" alt="">
@@ -71,7 +71,7 @@
       <p class="is-size-5 has-text-weight-medium has-text-link pt-6 " >I am a Website designer, developer & graphic designer. A design minded front-end software engineer focused on building beautiful interfaces & experience.  My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.</p>
       <div class="buttons pt-6">
         <a  download="Resume-Santhosh-Thomas.pdf" href="https://santhoshporfolio.s3.ap-south-1.amazonaws.com/Resumesanthosh.pdf">
-        <button  (click)= toggle()  class="button is-danger button is-medium has-text-weight-semibold"><i [@downloadButton]="isOpen ? 'open' : 'closed'" class="far fa-paper-plane pr-4"></i>Download Resume</button>
+        <button  (click)= toggle()  class="button is-danger button is-medium has-text-weight-semibold"><i class="far fa-paper-plane pr-4"></i>Download Resume</button>
       </a>
       </div>
 
@@ -169,7 +169,7 @@ opacity: 0.9;/*now this is known for the safari*/ ">
 <div class="hero">
 <div class="columns is-centered pt-6">
 <div class="column">
-    <img class="image" alt="education image" src="../../assets/carbon.png" [ngsReveal]="{ reset: true}">
+    <img class="image" alt="education image" src="../../assets/carbon.png" >
 </div>
 
  </div>
@@ -178,9 +178,9 @@ opacity: 0.9;/*now this is known for the safari*/ ">
 
 
 
-<section class="pt-6 container">
+<section class="pt-6 ">
   <br>
-<h1 class="is-size-1 pb-6 has-text-weight-bold has-text-primary has-text-centered-touch">Latest<span class="has-text-link">Work</span></h1>
+<h1 class="is-size-1 container pb-6 has-text-weight-bold has-text-primary has-text-centered-touch">Latest<span class="has-text-link"> Work</span></h1>
 <div class="hero pt-6 pb-6">
 
 <slider-carousel [images]="images"></slider-carousel>
