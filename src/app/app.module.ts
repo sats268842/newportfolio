@@ -13,9 +13,9 @@ import { EducationTimelineComponent } from './ui/education-timeline/education-ti
 import { ExperienceTimelineComponent } from './ui/experience-timeline/experience-timeline.component';
 import {NgsRevealModule} from 'ngx-scrollreveal';
 
-import { SliderCarouselModule } from 'slider-carousel';
+// import { SliderCarouselModule } from 'slider-carousel';
 
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+// import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 // Import library module
 // import { NgxSpinnerModule } from "ngx-spinner";
 
@@ -36,9 +36,9 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     NgsRevealModule,
     BrowserAnimationsModule,
     // NgxSpinnerModule,
-    SliderCarouselModule
+    // SliderCarouselModule
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  // schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
