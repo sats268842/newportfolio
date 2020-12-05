@@ -152,6 +152,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     let mySwiper = new Swiper('.swiper-container', {
       // Optional parameters
+      autoHeight: true,
       direction: 'vertical',
       loop: true,
 
