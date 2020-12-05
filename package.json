@@ -33,6 +33,7 @@
     "ngx-spinner": "^10.0.1",
     "rxjs": "~6.5.5",
     "slider-carousel": "^1.1.0",
+    "swiper": "^6.3.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },

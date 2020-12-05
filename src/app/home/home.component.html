@@ -183,7 +183,52 @@ opacity: 0.9;/*now this is known for the safari*/ ">
 <h1 class="is-size-1 container pb-6 has-text-weight-bold has-text-primary has-text-centered-touch">Latest<span class="has-text-link"> Work</span></h1>
 <div class="hero pt-6 pb-6">
 
-<slider-carousel [images]="images" *ngIf="browser"></slider-carousel>
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+
+        <div class="swiper-slide" >
+          <img class="image" alt="education image" src="https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606156551/portfolio/2cdb89107567489.5faa583a0b1ff_qvyinz.png">
+        </div>
+
+        <div class="swiper-slide" >
+          <img class="image" alt="education image" src="https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606156580/portfolio/Untitled-1_fhx8bo.png">
+        </div>
+
+        <div class="swiper-slide" >
+          <img class="image" alt="education image" src="https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606156825/portfolio/Bsafe_2_nwp7v7.png">
+        </div>
+
+        <div class="swiper-slide" >
+          <img class="image" alt="education image" src="https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606156923/portfolio/f9b8f8107309159.5fa405e129ed7_fegtrz.png">
+        </div>
+
+        <div class="swiper-slide" >
+          <img class="image" alt="education image" src="https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606157076/portfolio/keynote_p20elq.png">
+        </div>
+
+        <div class="swiper-slide" >
+          <img class="image" alt="education image" src="https://res.cloudinary.com/www-santhoshthomas-xyz/image/upload/v1606157084/portfolio/sdasf_zkhwsa.png">
+        </div>
+
+
+
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+<!--
+<slider-carousel [images]="images" *ngIf="browser"></slider-carousel> -->
 </div>
 
 

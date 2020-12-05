@@ -7,6 +7,8 @@ import {
   transition
 } from '@angular/animations';
 
+
+import Swiper from 'swiper/bundle';
 import { isPlatformBrowser } from '@angular/common';
 
 import { PLATFORM_ID } from '@angular/core';
@@ -64,6 +66,7 @@ export class HomeComponent implements OnInit {
   isOpen = true;
 
   // tslint:disable-next-line: member-ordering
+
   skills = [
     {
       name: 'Angular',
@@ -147,6 +150,27 @@ export class HomeComponent implements OnInit {
 
 
   ngOnInit(): void {
+    let mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    })
   }
 
 
