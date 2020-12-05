@@ -116,6 +116,14 @@ margin: auto;
 //   // z-index: 1;
 // }
 @media screen and (max-width: 1020px) {
+  .swiper-container {
+    height: 400px;
+    img{
+      height: 400px;
+      margin: auto;
+    }
+  }
+
 
   .skill-section{
     .columns{
