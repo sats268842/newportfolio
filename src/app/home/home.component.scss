@@ -117,7 +117,15 @@ margin: auto;
 // }
 @media screen and (max-width: 1020px) {
 
+  .swiper-container {
+    width: 100%;
+    height: 200px;
+    img{
+      height: 200px;
+      width: 100%;
 
+    }
+  }
 
   .skill-section{
     .columns{
@@ -193,4 +201,7 @@ margin: auto;
  .swiper-container {
   width: 100%;
   height: 400px;
+  img{
+    height: 400px;
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit, ViewChild } from '@angular/core';
+import { Component, HostListener, Inject, OnInit, ViewChild } from '@angular/core';
 import {
   trigger,
   state,
@@ -7,6 +7,8 @@ import {
   transition
 } from '@angular/animations';
 
+
+import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 
 import Swiper from 'swiper/bundle';
 import { isPlatformBrowser } from '@angular/common';
@@ -53,7 +55,8 @@ export class HomeComponent implements OnInit {
 			html: '<slider-carousel [images]="example.images" height="350px" max-width="600px"></slider-carousel>'
 		}
 	];
-  constructor( @Inject(PLATFORM_ID) private platformId: Object) {
+  constructor( @Inject(PLATFORM_ID) private platformId: Object,
+  private breakpointObserver: BreakpointObserver) {
     // isPlatformBrowser(this.platformId)
     console.log(isPlatformBrowser(this.platformId))
     this.browser  =isPlatformBrowser(this.platformId)
@@ -148,30 +151,50 @@ export class HomeComponent implements OnInit {
     this.isOpen = !this.isOpen;
   }
 
-
+  @HostListener("window:resize", [])
   ngOnInit(): void {
-    let mySwiper = new Swiper('.swiper-container', {
-      // Optional parameters
-      autoHeight: true,
-      direction: 'vertical',
-      loop: true,
 
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
+    this.breakpointObserver.observe([
+      '(max-width: 768px)'
+        ]).subscribe(result => {
+          if (result.matches) {
+            let mySwiper = new Swiper('.swiper-container',{
+              // centeredSlides: true,
+              // slidesPerView: 1,
+              // spaceBetween: 30,
+              // slidesPerGroup: 3,
+              lazy: true,
+              loop: true,
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+          } else {
+            let mySwiper = new Swiper('.swiper-container',{
+              // centeredSlides: true,
+              slidesPerView: 3,
+              spaceBetween: 30,
+              slidesPerGroup: 3,
+              lazy: true,
+              loop: true,
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+          }
+        });
+    // const isSmallScreen = breakpointObserver.isMatched('(max-width: 599px)');
 
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-
-      // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-    })
   }
 
 

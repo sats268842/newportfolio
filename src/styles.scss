@@ -5,3 +5,6 @@
 @import '../node_modules/bulma/bulma.sass';
 @import '../node_modules/bulma-timeline/dist/css/bulma-timeline.sass';
 @import 'swiper/swiper-bundle.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
